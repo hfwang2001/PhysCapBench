@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="PhysCapBench logo" width="500">
+</p>
+
 # PhysCapBench
 
 **A Cross-Domain Benchmark for Physically Grounded Video Captioning**
