@@ -9,6 +9,18 @@
 
 **A Cross-Domain Benchmark for Physically Grounded Video Captioning**
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/institutions/baai-logo-white.png">
+    <img src="assets/institutions/baai-logo-black.png" alt="Beijing Academy of Artificial Intelligence · 智源研究院" width="200" align="middle">
+  </picture>
+  &nbsp;&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/institutions/physis-logo-white.png">
+    <img src="assets/institutions/physis-logo-black.png" alt="Physis · 逆矩阵" width="200" align="middle">
+  </picture>
+</p>
+
 PhysCapBench evaluates whether video captions describe physical events, objects, actions, interactions, state changes, mechanisms, and temporal relations. It contains **1,500 annotated sequences across three domains**, with one reference record per sequence.
 
 ![PhysCapBench overview](assets/overview.png)
