@@ -26,7 +26,7 @@ Reported captioning-strategy results, scored from 0 to 100 (higher is better). *
 
 EC: event coverage · OR: objects and roles · AM: actions and motion · CI: contact and interaction · SO: states and outcomes · MC: mechanisms and causality · TO: temporal order.
 
-### Third-person (466 videos)
+### Third-person
 
 | Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -42,7 +42,7 @@ EC: event coverage · OR: objects and roles · AM: actions and motion · CI: con
 | 10 | Meta caption | 54.32 | 49.62 | 61.79 | 55.99 | 54.55 | 55.46 | 55.47 | 42.84 |
 | 11 | LingBot Static | 32.12 | 23.08 | 50.00 | 26.22 | 35.18 | 35.01 | 25.85 | 17.39 |
 
-### Egocentric (12 videos)
+### Egocentric
 
 | Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
