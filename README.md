@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/logo.png" alt="PhysCapBench logo" width="500">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo.png" alt="PhysCapBench logo" width="500">
+  </picture>
 </p>
 
 # PhysCapBench
