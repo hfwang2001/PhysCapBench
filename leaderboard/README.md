@@ -18,4 +18,4 @@ The released benchmark uses revised references and seven numeric scores for ever
 
 The presentation follows the project website: fixed overall order, colored dimension headers, competition ranks and medals for each metric. The interactive view supports domain switching, model location without filtering, and CSV export. No backbone labels are shown or exported. The README uses generated SVG tables with accessible text tables below them.
 
-`results.json` is the single score source for the interactive view and SVGs. Regenerate the README images with `python leaderboard/render_readme.py`. See [paper and release correspondence](../docs/paper_alignment.md) for the repository-wide comparison.
+`results.json` is the single score source for the interactive view and SVGs. Regenerate the README images with `python leaderboard/render_readme.py`.
