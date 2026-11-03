@@ -16,17 +16,22 @@ PhysCapBench evaluates whether video captions describe physical events, objects,
 
 The 1,500 videos total **7.43 GB** and **9.16 hours**. Every sequence has an annotation and a scoring reference.
 
-Each UMI episode is one sample, not three. Preserve the three camera panels when generating captions. Third-person references are English, Ego references include bilingual fields, and UMI references retain their source-language fields. The text judge accepts these reference records.
+Each UMI episode is one sample, not three. Preserve the three camera panels when generating captions. Third-person references are English, Ego references include bilingual fields, and UMI references retain their source-language fields. The text judge accepts these reference records. This caption-evaluation release provides videos and annotation text; it does not package the raw hand-tracking or gripper-trajectory arrays used during the paper’s annotation workflow.
 
 ## Leaderboard
 
 Reported captioning-strategy results, scored from 0 to 100 (higher is better). **These are report-version results:** the evaluated subsets, references and applicable-dimension aggregation differ from the current 1,500-video release with all-seven numeric scoring. Compare results within each table; the displayed scores are not a rerun under the released protocol. Overall values are preserved from per-video aggregation, not recomputed from the seven displayed column means.
 
-[Download results (JSON)](leaderboard/results.json) · [Evaluation scope and sources](leaderboard/README.md)
+[Interactive leaderboard](https://hfwang2001.github.io/PhysCapBench/) · [Download results (JSON)](leaderboard/results.json) · [Evaluation scope and sources](leaderboard/README.md)
 
 EC: event coverage · OR: objects and roles · AM: actions and motion · CI: contact and interaction · SO: states and outcomes · MC: mechanisms and causality · TO: temporal order.
 
 ### Third-person
+
+[![Third-person leaderboard: overall and per-dimension ranks](leaderboard/third.svg)](https://hfwang2001.github.io/PhysCapBench/)
+
+<details>
+<summary>View scores as a text table</summary>
 
 | Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -42,7 +47,14 @@ EC: event coverage · OR: objects and roles · AM: actions and motion · CI: con
 | 10 | Meta caption | 54.32 | 49.62 | 61.79 | 55.99 | 54.55 | 55.46 | 55.47 | 42.84 |
 | 11 | LingBot Static | 32.12 | 23.08 | 50.00 | 26.22 | 35.18 | 35.01 | 25.85 | 17.39 |
 
+</details>
+
 ### Egocentric
+
+[![Egocentric leaderboard: overall and per-dimension ranks](leaderboard/ego.svg)](https://hfwang2001.github.io/PhysCapBench/)
+
+<details>
+<summary>View scores as a text table</summary>
 
 | Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -53,6 +65,8 @@ EC: event coverage · OR: objects and roles · AM: actions and motion · CI: con
 | 5 | CogVideoX | 57.16 | 60.17 | 61.17 | 63.18 | 61.43 | 71.88 | 25.83 | 56.25 |
 | 6 | EgoVid Action | 55.58 | 57.33 | 57.25 | 59.55 | 54.29 | 60.62 | 35.83 | 67.50 |
 | 7 | Meta caption | 42.41 | 49.17 | 46.67 | 54.09 | 38.57 | 55.00 | 7.08 | 42.50 |
+
+</details>
 
 Handheld-gripper results are not yet reported in this snapshot.
 
@@ -156,7 +170,7 @@ Only dimensions with insufficient reference evidence receive an additional `conf
 
 Outputs include `scores.jsonl`, `summary.json`, per-sample `scores/` and `applicability/` receipts, and `run.lock.json`. Evidence flags are frozen against exact reference and protocol hashes. Identical runs reuse valid checkpoints; changed captions, reference files, protocol or judge configuration require a new output directory.
 
-**Protocol version:** this release uses revised references and all-seven numeric aggregation. The report's historical tables used their stated reference snapshots and applicable-dimension aggregation. Those tables are not results for this revised release; do not compare them as an identical benchmark protocol. The score measures reference agreement and coverage, rather than independently verifying every claim against the source video.
+**Protocol version:** this release uses revised references and all-seven numeric aggregation. The report's historical tables used their stated reference snapshots and applicable-dimension aggregation. Those tables are not results for this revised release; do not compare them as an identical benchmark protocol. The score measures reference agreement and coverage, rather than independently verifying every claim against the source video. See [paper and release correspondence](docs/paper_alignment.md) for the exact scope and protocol differences.
 
 ## Quick end-to-end test
 
@@ -171,7 +185,7 @@ python bench.py validate --domain ego --limit 3 --predictions smoke_predictions.
 python bench.py score --domain ego --limit 3 --predictions smoke_predictions.jsonl --out results/smoke_ego
 ```
 
-Repeat for `third` and `umi`. A three-sample test is not a complete domain evaluation. See `VALIDATION.json`: a fresh Python 3.11 environment downloaded and hash-verified all 1,500 videos over HTTP; all annotation/reference pairs passed validation; three real videos per domain (nine total) completed caption generation, live scoring, and checkpoint-resume tests. All 1,500 published Hugging Face video objects match their expected sizes and SHA-256 values. Three videos per domain and all seven metadata files were additionally downloaded from revision `4b1872201558c6fb5e231f5be2b843ed16b2e105` without authentication and passed validation.
+Repeat for `third` and `umi`. A three-sample test is not a complete domain evaluation. See [VALIDATION.json](VALIDATION.json) for integration checks, not paper benchmark scores: a fresh Python 3.11 environment downloaded and hash-verified all 1,500 videos over HTTP; all annotation/reference pairs passed validation; three real videos per domain (nine total) completed caption generation, live scoring, and checkpoint-resume tests. All 1,500 published Hugging Face video objects match their expected sizes and SHA-256 values. Three videos per domain and all seven metadata files were additionally downloaded from revision `4b1872201558c6fb5e231f5be2b843ed16b2e105` without authentication and passed validation.
 
 ## Paper assets
 

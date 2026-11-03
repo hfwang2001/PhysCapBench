@@ -1,6 +1,6 @@
 # Leaderboard sources and scope
 
-The repository README displays the current project leaderboard snapshot. `results.json` stores exactly the same reported numbers and overall ranks.
+The [interactive leaderboard](https://hfwang2001.github.io/PhysCapBench/) and repository README display the project’s report-version leaderboard snapshot. `results.json` stores exactly the same reported numbers and overall ranks.
 
 | Domain | Strategies | Source |
 |---|---:|---|
@@ -15,3 +15,7 @@ These are captioning-strategy comparisons under the report's experimental setup.
 Overall values average per-video scores over dimensions supported by that version's reference. Different dimensions can therefore have different denominators. Scores are preserved verbatim; overall is not recalculated from rounded dimension averages. Ranking is descending by the reported overall score, with ties sharing the same rank.
 
 The released benchmark uses revised references and seven numeric scores for every video, with confidence only where reference evidence is insufficient. This snapshot is not a full 1,500-video evaluation under that release. New results should record their dataset revision, protocol hash, evaluated IDs, judge configuration and aggregation before being compared or added.
+
+The presentation follows the project website: fixed overall order, colored dimension headers, competition ranks and medals for each metric. The interactive view supports domain switching, model location without filtering, and CSV export. No backbone labels are shown or exported. The README uses generated SVG tables with accessible text tables below them.
+
+`results.json` is the single score source for the interactive view and SVGs. Regenerate the README images with `python leaderboard/render_readme.py`. See [paper and release correspondence](../docs/paper_alignment.md) for the repository-wide comparison.

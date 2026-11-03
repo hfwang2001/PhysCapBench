@@ -1,0 +1,30 @@
+name: leaderboard
+on:
+  push:
+    branches: [codex/open-source-release]
+    paths: ['leaderboard/**', '.github/workflows/leaderboard.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 leaderboard/render_readme.py
+      - run: git diff --exit-code -- leaderboard/third.svg leaderboard/ego.svg
+      - run: node --check leaderboard/leaderboard.js
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: leaderboard
+      - uses: actions/deploy-pages@v4
+        id: deployment

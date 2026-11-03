@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="642" viewBox="0 0 1450 642" role="img" aria-labelledby="title desc">
+<title id="title">Egocentric PhysCapBench leaderboard</title>
+<desc id="desc">Report-version scores, fixed overall ranking and per-dimension competition ranks. Higher is better. Text tables are available in the README.</desc>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#20262b">
+<text x="0" y="33" font-size="28" fill="#20262b" text-anchor="start" font-weight="700">Egocentric Leaderboard</text>
+<text x="0" y="61" font-size="14" fill="#737b83" text-anchor="start" font-weight="400">Report-version results · Scores 0–100 · Higher is better</text>
+<text x="1448" y="34" font-size="14" fill="#737b83" text-anchor="end" font-weight="400">7 strategies</text>
+<rect y="82" width="1450" height="70" fill="#f1f3f5"/>
+<text x="16" y="124" font-size="15" fill="#20262b" text-anchor="start" font-weight="700">Model</text>
+<text x="298.0" y="124" font-size="15" fill="#20262b" text-anchor="middle" font-weight="400">#</text>
+<text x="400.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">PhysCapBench</text>
+<text x="400.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Score</text>
+<rect x="330" y="149" width="140" height="3" fill="#a16207"/>
+<text x="540.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Event</text>
+<text x="540.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">coverage</text>
+<rect x="470" y="149" width="140" height="3" fill="#2563eb"/>
+<text x="680.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Objects</text>
+<text x="680.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">and roles</text>
+<rect x="610" y="149" width="140" height="3" fill="#f97316"/>
+<text x="820.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Actions</text>
+<text x="820.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">and motion</text>
+<rect x="750" y="149" width="140" height="3" fill="#16a34a"/>
+<text x="960.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Contact</text>
+<text x="960.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">and interaction</text>
+<rect x="890" y="149" width="140" height="3" fill="#7c3aed"/>
+<text x="1100.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">States</text>
+<text x="1100.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">and outcomes</text>
+<rect x="1030" y="149" width="140" height="3" fill="#e11d48"/>
+<text x="1240.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Physical mechanisms</text>
+<text x="1240.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">and causality</text>
+<rect x="1170" y="149" width="140" height="3" fill="#0f766e"/>
+<text x="1380.0" y="110" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">Temporal</text>
+<text x="1380.0" y="129" font-size="13" fill="#20262b" text-anchor="middle" font-weight="400">order</text>
+<rect x="1310" y="149" width="140" height="3" fill="#64748b"/>
+<rect y="152" width="330" height="30" fill="#e9edf0"/>
+<text x="16" y="173" font-size="13" fill="#36414a" text-anchor="start" font-weight="400">Top 7</text>
+<text x="16" y="216.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">Physis</text>
+<path d="M292.0 205.0 l-3 -13 8 2 3 11 M304.0 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="298.0" cy="211.0" r="12" fill="#d5a52d"/>
+<text x="298.0" y="215.0" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<path d="M342 205.0 l-3 -13 8 2 3 11 M354 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="348" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="348" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="362" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="457" y="217.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">79.36</text>
+<path d="M482 205.0 l-3 -13 8 2 3 11 M494 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="488" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="488" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="502" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="597" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">84.42</text>
+<path d="M622 205.0 l-3 -13 8 2 3 11 M634 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="628" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="628" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="642" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="737" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">84.83</text>
+<path d="M762 205.0 l-3 -13 8 2 3 11 M774 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="768" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="768" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="782" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="877" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">87.73</text>
+<path d="M902 205.0 l-3 -13 8 2 3 11 M914 205.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="908" cy="211.0" r="9" fill="#96a2ad"/>
+<text x="908" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="922" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="1017" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">77.14</text>
+<path d="M1042 205.0 l-3 -13 8 2 3 11 M1054 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="1048" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="1048" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="1062" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="1157" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">92.75</text>
+<path d="M1182 205.0 l-3 -13 8 2 3 11 M1194 205.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="1188" cy="211.0" r="9" fill="#d5a52d"/>
+<text x="1188" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="1202" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="1297" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">49.58</text>
+<path d="M1322 205.0 l-3 -13 8 2 3 11 M1334 205.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="1328" cy="211.0" r="9" fill="#96a2ad"/>
+<text x="1328" y="215.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="1342" y="215.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="1437" y="217.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">75.75</text>
+<path d="M0 240 H1450" stroke="#e1e5e8"/>
+<rect y="240" width="1450" height="58" fill="#fafbfc"/>
+<text x="16" y="274.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">Cosmos Ego</text>
+<path d="M292.0 263.0 l-3 -13 8 2 3 11 M304.0 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="298.0" cy="269.0" r="12" fill="#96a2ad"/>
+<text x="298.0" y="273.0" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<path d="M342 263.0 l-3 -13 8 2 3 11 M354 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="348" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="348" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="362" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="457" y="275.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">75.41</text>
+<path d="M482 263.0 l-3 -13 8 2 3 11 M494 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="488" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="488" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="502" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="597" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">81.08</text>
+<path d="M622 263.0 l-3 -13 8 2 3 11 M634 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="628" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="628" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="642" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="737" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">78.50</text>
+<path d="M762 263.0 l-3 -13 8 2 3 11 M774 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="768" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="768" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="782" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="877" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">84.64</text>
+<path d="M902 263.0 l-3 -13 8 2 3 11 M914 263.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="908" cy="269.0" r="9" fill="#d5a52d"/>
+<text x="908" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="922" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="1017" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">83.57</text>
+<path d="M1042 263.0 l-3 -13 8 2 3 11 M1054 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="1048" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="1048" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="1062" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="1157" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">80.12</text>
+<path d="M1182 263.0 l-3 -13 8 2 3 11 M1194 263.0 l3 -13 -8 2 -3 11" fill="#96a2ad" opacity=".65"/>
+<circle cx="1188" cy="269.0" r="9" fill="#96a2ad"/>
+<text x="1188" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="1202" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#2</text>
+<text x="1297" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">46.50</text>
+<path d="M1322 263.0 l-3 -13 8 2 3 11 M1334 263.0 l3 -13 -8 2 -3 11" fill="#d5a52d" opacity=".65"/>
+<circle cx="1328" cy="269.0" r="9" fill="#d5a52d"/>
+<text x="1328" y="273.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="1342" y="273.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#1</text>
+<text x="1437" y="275.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">77.50</text>
+<path d="M0 298 H1450" stroke="#e1e5e8"/>
+<text x="16" y="332.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">EgoVid Dense</text>
+<path d="M292.0 321.0 l-3 -13 8 2 3 11 M304.0 321.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="298.0" cy="327.0" r="12" fill="#ba8056"/>
+<text x="298.0" y="331.0" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<path d="M342 321.0 l-3 -13 8 2 3 11 M354 321.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="348" cy="327.0" r="9" fill="#ba8056"/>
+<text x="348" y="331.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="362" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="457" y="333.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">58.42</text>
+<path d="M482 321.0 l-3 -13 8 2 3 11 M494 321.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="488" cy="327.0" r="9" fill="#ba8056"/>
+<text x="488" y="331.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="502" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="597" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">61.50</text>
+<path d="M622 321.0 l-3 -13 8 2 3 11 M634 321.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="628" cy="327.0" r="9" fill="#ba8056"/>
+<text x="628" y="331.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="642" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="737" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">63.08</text>
+<text x="782" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="877" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">62.64</text>
+<text x="922" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="1017" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">59.29</text>
+<text x="1062" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="1157" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">70.88</text>
+<text x="1202" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="1297" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">30.00</text>
+<text x="1342" y="331.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="1437" y="333.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">63.75</text>
+<path d="M0 356 H1450" stroke="#e1e5e8"/>
+<rect y="356" width="1450" height="58" fill="#fafbfc"/>
+<text x="16" y="390.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">Open-Sora v1.3</text>
+<text x="298.0" y="390.0" font-size="14" fill="#69737b" text-anchor="middle" font-weight="400">4</text>
+<text x="362" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="457" y="391.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">58.01</text>
+<text x="502" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="597" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">60.25</text>
+<text x="642" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="737" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">62.92</text>
+<text x="782" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="877" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">59.91</text>
+<text x="922" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="1017" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">54.29</text>
+<text x="1062" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="1157" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">68.25</text>
+<text x="1202" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="1297" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">31.42</text>
+<text x="1342" y="389.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#4</text>
+<text x="1437" y="391.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">66.25</text>
+<path d="M0 414 H1450" stroke="#e1e5e8"/>
+<text x="16" y="448.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">CogVideoX</text>
+<text x="298.0" y="448.0" font-size="14" fill="#69737b" text-anchor="middle" font-weight="400">5</text>
+<text x="362" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="457" y="449.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">57.16</text>
+<text x="502" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="597" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">60.17</text>
+<text x="642" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="737" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">61.17</text>
+<path d="M762 437.0 l-3 -13 8 2 3 11 M774 437.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="768" cy="443.0" r="9" fill="#ba8056"/>
+<text x="768" y="447.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="782" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="877" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">63.18</text>
+<path d="M902 437.0 l-3 -13 8 2 3 11 M914 437.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="908" cy="443.0" r="9" fill="#ba8056"/>
+<text x="908" y="447.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="922" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="1017" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">61.43</text>
+<path d="M1042 437.0 l-3 -13 8 2 3 11 M1054 437.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="1048" cy="443.0" r="9" fill="#ba8056"/>
+<text x="1048" y="447.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="1062" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="1157" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">71.88</text>
+<text x="1202" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="1297" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">25.83</text>
+<text x="1342" y="447.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="1437" y="449.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">56.25</text>
+<path d="M0 472 H1450" stroke="#e1e5e8"/>
+<rect y="472" width="1450" height="58" fill="#fafbfc"/>
+<text x="16" y="506.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">EgoVid Action</text>
+<text x="298.0" y="506.0" font-size="14" fill="#69737b" text-anchor="middle" font-weight="400">6</text>
+<text x="362" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="457" y="507.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">55.58</text>
+<text x="502" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="597" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">57.33</text>
+<text x="642" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="737" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">57.25</text>
+<text x="782" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="877" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">59.55</text>
+<text x="922" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#5</text>
+<text x="1017" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">54.29</text>
+<text x="1062" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#6</text>
+<text x="1157" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">60.62</text>
+<path d="M1182 495.0 l-3 -13 8 2 3 11 M1194 495.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="1188" cy="501.0" r="9" fill="#ba8056"/>
+<text x="1188" y="505.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="1202" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="1297" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">35.83</text>
+<path d="M1322 495.0 l-3 -13 8 2 3 11 M1334 495.0 l3 -13 -8 2 -3 11" fill="#ba8056" opacity=".65"/>
+<circle cx="1328" cy="501.0" r="9" fill="#ba8056"/>
+<text x="1328" y="505.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="1342" y="505.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#3</text>
+<text x="1437" y="507.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">67.50</text>
+<path d="M0 530 H1450" stroke="#e1e5e8"/>
+<text x="16" y="564.0" font-size="16" fill="#20262b" text-anchor="start" font-weight="400">Meta caption</text>
+<text x="298.0" y="564.0" font-size="14" fill="#69737b" text-anchor="middle" font-weight="400">7</text>
+<text x="362" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="457" y="565.0" font-size="17" fill="#6b4500" text-anchor="end" font-weight="600">42.41</text>
+<text x="502" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="597" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">49.17</text>
+<text x="642" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="737" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">46.67</text>
+<text x="782" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="877" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">54.09</text>
+<text x="922" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="1017" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">38.57</text>
+<text x="1062" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="1157" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">55.00</text>
+<text x="1202" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="1297" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">7.08</text>
+<text x="1342" y="563.0" font-size="11" fill="#69737b" text-anchor="start" font-weight="400">#7</text>
+<text x="1437" y="565.0" font-size="17" fill="#20262b" text-anchor="end" font-weight="400">42.50</text>
+<path d="M0 588 H1450" stroke="#e1e5e8"/>
+<path d="M0 82 V588" stroke="#e1e5e8"/>
+<path d="M266 82 V588" stroke="#e1e5e8"/>
+<path d="M330 82 V588" stroke="#e1e5e8"/>
+<path d="M470 82 V588" stroke="#e1e5e8"/>
+<path d="M610 82 V588" stroke="#e1e5e8"/>
+<path d="M750 82 V588" stroke="#e1e5e8"/>
+<path d="M890 82 V588" stroke="#e1e5e8"/>
+<path d="M1030 82 V588" stroke="#e1e5e8"/>
+<path d="M1170 82 V588" stroke="#e1e5e8"/>
+<path d="M1310 82 V588" stroke="#e1e5e8"/>
+<path d="M1450 82 V588" stroke="#e1e5e8"/>
+<text x="0" y="620" font-size="13" fill="#737b83" text-anchor="start" font-weight="400">Overall scores retain the reported per-video aggregation. Equal scores share the same rank.</text>
+</g></svg>

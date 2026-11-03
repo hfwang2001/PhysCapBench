@@ -11,4 +11,4 @@ Source snapshot downloaded from Overleaf on 2026-11-03. Only the overview is emb
 | ego_reconstruction.png | Egocentric reconstruction example |
 | policy_utility.pdf | Policy utility study |
 
-The paper also includes tables for seven-dimensional definitions, domain coverage, egocentric caption results, reconstruction distances, and policy success. Historical results have different reference/aggregation settings from the current release and are not imported into its leaderboard.
+The paper also includes tables for seven-dimensional definitions, domain coverage, egocentric caption results, reconstruction distances, and policy success. The [leaderboard](../leaderboard/README.md) preserves the reported captioning results as a separate report-version snapshot. Its references and aggregation differ from the released evaluator; the table is not a rerun under that evaluator.
