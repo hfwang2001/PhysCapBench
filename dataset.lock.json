@@ -1,0 +1,17 @@
+{
+  "release": "physcapbench_1500_20261103",
+  "samples": 1500,
+  "per_domain": {
+    "third": 500,
+    "ego": 500,
+    "umi": 500
+  },
+  "applicability_protocol_sha256": "fdd112a2731b1bfa8bb6dc5e435d5cd247fcf4804b3c30a6951ea4ede109be3b",
+  "metadata_sha256": {
+    "annotations.jsonl": "b262aad552412ff389f9992357de6593b89903abe87b740a199a97ceff5278b5",
+    "applicability.jsonl": "0b39b104da4c139f076341081d0b3566c49d8dafe0eeafe697b140e43b91979a",
+    "manifest.jsonl": "1bca99ac4d23d40291c0d067b005bf58784a9212d884f672d4d2834c4a473d50",
+    "references.jsonl": "09af666d05928075cfd1a5dece69b80652eba890dec0d5a9e19f7f2c606fea08",
+    "supplements.jsonl": "6e201ce8092f03bd40a789a7071747617c2bd15e5192a01e2782fd95461a96e8"
+  }
+}

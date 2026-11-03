@@ -1,0 +1,313 @@
+{
+  "status": "passed",
+  "runtime": "3.11.14 (main, Oct 28 2025, 12:11:26) [Clang 20.1.4 ]",
+  "downloaded_and_hash_verified_videos": 1500,
+  "annotation_reference_pairs_validated": 1500,
+  "fresh_venv": true,
+  "real_caption_generation_and_scoring_samples": 9,
+  "per_domain_samples": 3,
+  "resume_cache_test": "passed",
+  "data_transport": "loopback HTTP; public Hugging Face test still required",
+  "public_huggingface_tested": false,
+  "bench_sha256": "1c302f6d04e5eff790e8578550d5416c6fdd2c8078634840eb6af5f6d69e1154",
+  "dataset_lock_sha256": "ce1bdc173bad314a21e3e788096e9fb7f2523fe163f496a94b9f7c7efc3d0ac5",
+  "results": {
+    "third": {
+      "n": 3,
+      "overall": 73.71428571428572,
+      "dimensions": {
+        "event_coverage": {
+          "mean": 70,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "object_role": {
+          "mean": 73.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "action_motion": {
+          "mean": 72,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "contact_interaction": {
+          "mean": 73.33333333333333,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "state_spatial_outcome": {
+          "mean": 72.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "mechanism_causality": {
+          "mean": 75.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "temporal_order": {
+          "mean": 78.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        }
+      },
+      "per_video": {
+        "physcap9k_00012": 75.42857142857143,
+        "physcap9k_00031": 70.42857142857143,
+        "physcap9k_00037": 75.28571428571429
+      },
+      "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+      "scope": "subset",
+      "domain": "third",
+      "per_domain": {
+        "third": {
+          "n": 3,
+          "overall": 73.71428571428572,
+          "dimensions": {
+            "event_coverage": {
+              "mean": 70,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "object_role": {
+              "mean": 73.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "action_motion": {
+              "mean": 72,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "contact_interaction": {
+              "mean": 73.33333333333333,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "state_spatial_outcome": {
+              "mean": 72.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "mechanism_causality": {
+              "mean": 75.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "temporal_order": {
+              "mean": 78.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            }
+          },
+          "per_video": {
+            "physcap9k_00012": 75.42857142857143,
+            "physcap9k_00031": 70.42857142857143,
+            "physcap9k_00037": 75.28571428571429
+          },
+          "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+          "scope": "subset"
+        }
+      }
+    },
+    "ego": {
+      "n": 3,
+      "overall": 64.28571428571429,
+      "dimensions": {
+        "event_coverage": {
+          "mean": 63.333333333333336,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "object_role": {
+          "mean": 75,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "action_motion": {
+          "mean": 63.333333333333336,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "contact_interaction": {
+          "mean": 66.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "state_spatial_outcome": {
+          "mean": 68.33333333333333,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "mechanism_causality": {
+          "mean": 50,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "temporal_order": {
+          "mean": 63.333333333333336,
+          "n": 3,
+          "estimated_n": 0
+        }
+      },
+      "per_video": {
+        "egodex500_0001": 75,
+        "egodex500_0002": 46.42857142857143,
+        "egodex500_0003": 71.42857142857143
+      },
+      "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+      "scope": "subset",
+      "domain": "ego",
+      "per_domain": {
+        "ego": {
+          "n": 3,
+          "overall": 64.28571428571429,
+          "dimensions": {
+            "event_coverage": {
+              "mean": 63.333333333333336,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "object_role": {
+              "mean": 75,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "action_motion": {
+              "mean": 63.333333333333336,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "contact_interaction": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "state_spatial_outcome": {
+              "mean": 68.33333333333333,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "mechanism_causality": {
+              "mean": 50,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "temporal_order": {
+              "mean": 63.333333333333336,
+              "n": 3,
+              "estimated_n": 0
+            }
+          },
+          "per_video": {
+            "egodex500_0001": 75,
+            "egodex500_0002": 46.42857142857143,
+            "egodex500_0003": 71.42857142857143
+          },
+          "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+          "scope": "subset"
+        }
+      }
+    },
+    "umi": {
+      "n": 3,
+      "overall": 70.0,
+      "dimensions": {
+        "event_coverage": {
+          "mean": 63.333333333333336,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "object_role": {
+          "mean": 65,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "action_motion": {
+          "mean": 67.33333333333333,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "contact_interaction": {
+          "mean": 72.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "state_spatial_outcome": {
+          "mean": 76,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "mechanism_causality": {
+          "mean": 71.66666666666667,
+          "n": 3,
+          "estimated_n": 0
+        },
+        "temporal_order": {
+          "mean": 74,
+          "n": 3,
+          "estimated_n": 0
+        }
+      },
+      "per_video": {
+        "umi500_0001": 65,
+        "umi500_0002": 77.14285714285714,
+        "umi500_0003": 67.85714285714286
+      },
+      "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+      "scope": "subset",
+      "domain": "umi",
+      "per_domain": {
+        "umi": {
+          "n": 3,
+          "overall": 70.0,
+          "dimensions": {
+            "event_coverage": {
+              "mean": 63.333333333333336,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "object_role": {
+              "mean": 65,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "action_motion": {
+              "mean": 67.33333333333333,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "contact_interaction": {
+              "mean": 72.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "state_spatial_outcome": {
+              "mean": 76,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "mechanism_causality": {
+              "mean": 71.66666666666667,
+              "n": 3,
+              "estimated_n": 0
+            },
+            "temporal_order": {
+              "mean": 74,
+              "n": 3,
+              "estimated_n": 0
+            }
+          },
+          "per_video": {
+            "umi500_0001": 65,
+            "umi500_0002": 77.14285714285714,
+            "umi500_0003": 67.85714285714286
+          },
+          "aggregation": "equal_dimension_then_equal_video; confidence is not a weight",
+          "scope": "subset"
+        }
+      }
+    }
+  }
+}
