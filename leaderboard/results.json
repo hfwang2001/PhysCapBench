@@ -1,0 +1,292 @@
+{
+  "title": "PhysCapBench Leaderboard",
+  "version": "report_snapshot_20261103",
+  "score_range": [
+    0,
+    100
+  ],
+  "higher_is_better": true,
+  "aggregation": "Mean of per-video scores over applicable reference dimensions; overall values preserved from the source results.",
+  "current_release_comparable": false,
+  "dimension_labels": {
+    "event_coverage": "Event coverage",
+    "object_role": "Objects and roles",
+    "action_motion": "Actions and motion",
+    "contact_interaction": "Contact and interaction",
+    "state_spatial_outcome": "States and outcomes",
+    "mechanism_causality": "Physical mechanisms and causality",
+    "temporal_order": "Temporal order"
+  },
+  "domains": {
+    "third": {
+      "label": "Third-person",
+      "evaluated_videos": 466,
+      "results": [
+        {
+          "rank": 1,
+          "strategy": "LingBot Temporal",
+          "overall": 72.91,
+          "dimensions": {
+            "event_coverage": 67.14,
+            "object_role": 73.68,
+            "action_motion": 74.18,
+            "contact_interaction": 74.03,
+            "state_spatial_outcome": 75.07,
+            "mechanism_causality": 67.6,
+            "temporal_order": 72.84
+          }
+        },
+        {
+          "rank": 2,
+          "strategy": "Cosmos3 Narrative",
+          "overall": 71.7,
+          "dimensions": {
+            "event_coverage": 63.81,
+            "object_role": 71.12,
+            "action_motion": 73.66,
+            "contact_interaction": 75.48,
+            "state_spatial_outcome": 74.98,
+            "mechanism_causality": 71.0,
+            "temporal_order": 69.17
+          }
+        },
+        {
+          "rank": 3,
+          "strategy": "LingBot Narrative",
+          "overall": 71.69,
+          "dimensions": {
+            "event_coverage": 66.13,
+            "object_role": 71.92,
+            "action_motion": 73.22,
+            "contact_interaction": 73.86,
+            "state_spatial_outcome": 74.74,
+            "mechanism_causality": 69.28,
+            "temporal_order": 68.45
+          }
+        },
+        {
+          "rank": 4,
+          "strategy": "Cosmos Curator General",
+          "overall": 71.18,
+          "dimensions": {
+            "event_coverage": 64.15,
+            "object_role": 71.92,
+            "action_motion": 72.82,
+            "contact_interaction": 74.05,
+            "state_spatial_outcome": 74.06,
+            "mechanism_causality": 68.62,
+            "temporal_order": 68.27
+          }
+        },
+        {
+          "rank": 5,
+          "strategy": "Open-Sora v1.3",
+          "overall": 70.94,
+          "dimensions": {
+            "event_coverage": 64.85,
+            "object_role": 71.92,
+            "action_motion": 72.5,
+            "contact_interaction": 73.5,
+            "state_spatial_outcome": 73.52,
+            "mechanism_causality": 68.98,
+            "temporal_order": 67.21
+          }
+        },
+        {
+          "rank": 6,
+          "strategy": "Cosmos Robot-action",
+          "overall": 70.86,
+          "dimensions": {
+            "event_coverage": 65.66,
+            "object_role": 72.4,
+            "action_motion": 72.73,
+            "contact_interaction": 72.04,
+            "state_spatial_outcome": 73.6,
+            "mechanism_causality": 63.66,
+            "temporal_order": 66.43
+          }
+        },
+        {
+          "rank": 7,
+          "strategy": "CogVideoX",
+          "overall": 70.62,
+          "dimensions": {
+            "event_coverage": 63.99,
+            "object_role": 71.38,
+            "action_motion": 72.64,
+            "contact_interaction": 73.74,
+            "state_spatial_outcome": 73.05,
+            "mechanism_causality": 69.28,
+            "temporal_order": 66.64
+          }
+        },
+        {
+          "rank": 8,
+          "strategy": "EgoVid Dense",
+          "overall": 70.52,
+          "dimensions": {
+            "event_coverage": 64.43,
+            "object_role": 71.5,
+            "action_motion": 71.63,
+            "contact_interaction": 73.25,
+            "state_spatial_outcome": 73.09,
+            "mechanism_causality": 67.04,
+            "temporal_order": 67.62
+          }
+        },
+        {
+          "rank": 9,
+          "strategy": "EgoVid Action",
+          "overall": 69.92,
+          "dimensions": {
+            "event_coverage": 64.26,
+            "object_role": 70.25,
+            "action_motion": 71.72,
+            "contact_interaction": 72.85,
+            "state_spatial_outcome": 72.39,
+            "mechanism_causality": 64.81,
+            "temporal_order": 66.16
+          }
+        },
+        {
+          "rank": 10,
+          "strategy": "Meta caption",
+          "overall": 54.32,
+          "dimensions": {
+            "event_coverage": 49.62,
+            "object_role": 61.79,
+            "action_motion": 55.99,
+            "contact_interaction": 54.55,
+            "state_spatial_outcome": 55.46,
+            "mechanism_causality": 55.47,
+            "temporal_order": 42.84
+          }
+        },
+        {
+          "rank": 11,
+          "strategy": "LingBot Static",
+          "overall": 32.12,
+          "dimensions": {
+            "event_coverage": 23.08,
+            "object_role": 50.0,
+            "action_motion": 26.22,
+            "contact_interaction": 35.18,
+            "state_spatial_outcome": 35.01,
+            "mechanism_causality": 25.85,
+            "temporal_order": 17.39
+          }
+        }
+      ]
+    },
+    "ego": {
+      "label": "Egocentric",
+      "evaluated_videos": 12,
+      "results": [
+        {
+          "rank": 1,
+          "strategy": "Physis",
+          "overall": 79.36,
+          "dimensions": {
+            "event_coverage": 84.42,
+            "object_role": 84.83,
+            "action_motion": 87.73,
+            "contact_interaction": 77.14,
+            "state_spatial_outcome": 92.75,
+            "mechanism_causality": 49.58,
+            "temporal_order": 75.75
+          }
+        },
+        {
+          "rank": 2,
+          "strategy": "Cosmos Ego",
+          "overall": 75.41,
+          "dimensions": {
+            "event_coverage": 81.08,
+            "object_role": 78.5,
+            "action_motion": 84.64,
+            "contact_interaction": 83.57,
+            "state_spatial_outcome": 80.12,
+            "mechanism_causality": 46.5,
+            "temporal_order": 77.5
+          }
+        },
+        {
+          "rank": 3,
+          "strategy": "EgoVid Dense",
+          "overall": 58.42,
+          "dimensions": {
+            "event_coverage": 61.5,
+            "object_role": 63.08,
+            "action_motion": 62.64,
+            "contact_interaction": 59.29,
+            "state_spatial_outcome": 70.88,
+            "mechanism_causality": 30.0,
+            "temporal_order": 63.75
+          }
+        },
+        {
+          "rank": 4,
+          "strategy": "Open-Sora v1.3",
+          "overall": 58.01,
+          "dimensions": {
+            "event_coverage": 60.25,
+            "object_role": 62.92,
+            "action_motion": 59.91,
+            "contact_interaction": 54.29,
+            "state_spatial_outcome": 68.25,
+            "mechanism_causality": 31.42,
+            "temporal_order": 66.25
+          }
+        },
+        {
+          "rank": 5,
+          "strategy": "CogVideoX",
+          "overall": 57.16,
+          "dimensions": {
+            "event_coverage": 60.17,
+            "object_role": 61.17,
+            "action_motion": 63.18,
+            "contact_interaction": 61.43,
+            "state_spatial_outcome": 71.88,
+            "mechanism_causality": 25.83,
+            "temporal_order": 56.25
+          }
+        },
+        {
+          "rank": 6,
+          "strategy": "EgoVid Action",
+          "overall": 55.58,
+          "dimensions": {
+            "event_coverage": 57.33,
+            "object_role": 57.25,
+            "action_motion": 59.55,
+            "contact_interaction": 54.29,
+            "state_spatial_outcome": 60.62,
+            "mechanism_causality": 35.83,
+            "temporal_order": 67.5
+          }
+        },
+        {
+          "rank": 7,
+          "strategy": "Meta caption",
+          "overall": 42.41,
+          "dimensions": {
+            "event_coverage": 49.17,
+            "object_role": 46.67,
+            "action_motion": 54.09,
+            "contact_interaction": 38.57,
+            "state_spatial_outcome": 55.0,
+            "mechanism_causality": 7.08,
+            "temporal_order": 42.5
+          }
+        }
+      ]
+    },
+    "umi": {
+      "label": "Handheld grippers",
+      "evaluated_videos": null,
+      "status": "Not reported in the current leaderboard snapshot",
+      "results": []
+    }
+  }
+}

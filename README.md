@@ -18,6 +18,44 @@ The 1,500 videos total **7.43 GB** and **9.16 hours**. Every sequence has an ann
 
 Each UMI episode is one sample, not three. Preserve the three camera panels when generating captions. Third-person references are English, Ego references include bilingual fields, and UMI references retain their source-language fields. The text judge accepts these reference records.
 
+## Leaderboard
+
+Reported captioning-strategy results, scored from 0 to 100 (higher is better). **These are report-version results:** the evaluated subsets, references and applicable-dimension aggregation differ from the current 1,500-video release with all-seven numeric scoring. Compare results within each table; the displayed scores are not a rerun under the released protocol. Overall values are preserved from per-video aggregation, not recomputed from the seven displayed column means.
+
+[Download results (JSON)](leaderboard/results.json) · [Evaluation scope and sources](leaderboard/README.md)
+
+EC: event coverage · OR: objects and roles · AM: actions and motion · CI: contact and interaction · SO: states and outcomes · MC: mechanisms and causality · TO: temporal order.
+
+### Third-person (466 videos)
+
+| Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
+|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | LingBot Temporal | **72.91** | **67.14** | **73.68** | **74.18** | 74.03 | **75.07** | 67.60 | **72.84** |
+| 2 | Cosmos3 Narrative | 71.70 | 63.81 | 71.12 | 73.66 | **75.48** | 74.98 | **71.00** | 69.17 |
+| 3 | LingBot Narrative | 71.69 | 66.13 | 71.92 | 73.22 | 73.86 | 74.74 | 69.28 | 68.45 |
+| 4 | Cosmos Curator General | 71.18 | 64.15 | 71.92 | 72.82 | 74.05 | 74.06 | 68.62 | 68.27 |
+| 5 | Open-Sora v1.3 | 70.94 | 64.85 | 71.92 | 72.50 | 73.50 | 73.52 | 68.98 | 67.21 |
+| 6 | Cosmos Robot-action | 70.86 | 65.66 | 72.40 | 72.73 | 72.04 | 73.60 | 63.66 | 66.43 |
+| 7 | CogVideoX | 70.62 | 63.99 | 71.38 | 72.64 | 73.74 | 73.05 | 69.28 | 66.64 |
+| 8 | EgoVid Dense | 70.52 | 64.43 | 71.50 | 71.63 | 73.25 | 73.09 | 67.04 | 67.62 |
+| 9 | EgoVid Action | 69.92 | 64.26 | 70.25 | 71.72 | 72.85 | 72.39 | 64.81 | 66.16 |
+| 10 | Meta caption | 54.32 | 49.62 | 61.79 | 55.99 | 54.55 | 55.46 | 55.47 | 42.84 |
+| 11 | LingBot Static | 32.12 | 23.08 | 50.00 | 26.22 | 35.18 | 35.01 | 25.85 | 17.39 |
+
+### Egocentric (12 videos)
+
+| Rank | Strategy | Overall | EC | OR | AM | CI | SO | MC | TO |
+|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | Physis | **79.36** | **84.42** | **84.83** | **87.73** | 77.14 | **92.75** | **49.58** | 75.75 |
+| 2 | Cosmos Ego | 75.41 | 81.08 | 78.50 | 84.64 | **83.57** | 80.12 | 46.50 | **77.50** |
+| 3 | EgoVid Dense | 58.42 | 61.50 | 63.08 | 62.64 | 59.29 | 70.88 | 30.00 | 63.75 |
+| 4 | Open-Sora v1.3 | 58.01 | 60.25 | 62.92 | 59.91 | 54.29 | 68.25 | 31.42 | 66.25 |
+| 5 | CogVideoX | 57.16 | 60.17 | 61.17 | 63.18 | 61.43 | 71.88 | 25.83 | 56.25 |
+| 6 | EgoVid Action | 55.58 | 57.33 | 57.25 | 59.55 | 54.29 | 60.62 | 35.83 | 67.50 |
+| 7 | Meta caption | 42.41 | 49.17 | 46.67 | 54.09 | 38.57 | 55.00 | 7.08 | 42.50 |
+
+Handheld-gripper results are not yet reported in this snapshot.
+
 ## Install
 
 Python 3.10+ is required. Scoring needs an OpenAI-compatible text API; a GPU is not required. Install FFmpeg separately for the optional caption-generation example (`brew install ffmpeg` on macOS, or `sudo apt-get install ffmpeg` on Ubuntu).
