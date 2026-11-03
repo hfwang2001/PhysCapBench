@@ -3,14 +3,15 @@
   "runtime": "3.11.14 (main, Oct 28 2025, 12:11:26) [Clang 20.1.4 ]",
   "downloaded_and_hash_verified_videos": 1500,
   "annotation_reference_pairs_validated": 1500,
+  "metadata_files_downloaded_and_verified": 7,
   "fresh_venv": true,
   "real_caption_generation_and_scoring_samples": 9,
   "per_domain_samples": 3,
   "resume_cache_test": "passed",
-  "data_transport": "loopback HTTP; public Hugging Face test still required",
-  "public_huggingface_tested": false,
+  "data_transport": "All 1500 videos downloaded and verified over HTTP; all 1500 HF object sizes/SHA-256 checked; 3 videos/domain downloaded from the pinned public HF revision without authentication.",
+  "public_huggingface_tested": true,
   "bench_sha256": "1c302f6d04e5eff790e8578550d5416c6fdd2c8078634840eb6af5f6d69e1154",
-  "dataset_lock_sha256": "ce1bdc173bad314a21e3e788096e9fb7f2523fe163f496a94b9f7c7efc3d0ac5",
+  "dataset_lock_sha256": "d5980ab4b0bb17830450b97316623677010a18ca2293c6fe47023588e13e9976",
   "results": {
     "third": {
       "n": 3,
@@ -309,5 +310,35 @@
         }
       }
     }
+  },
+  "confidence_schema_live_test": {
+    "status": "passed",
+    "sample_id": "egodex500_0151",
+    "scope": "Live judge schema probe using a synthetic caption; not a caption-model benchmark result.",
+    "numeric_dimensions": 7,
+    "expected_confidence_dimensions": [
+      "mechanism_causality"
+    ],
+    "actual_confidence_dimensions": [
+      "mechanism_causality"
+    ]
+  },
+  "huggingface": {
+    "status": "passed",
+    "repo_id": "hfwang01/PhysCapBench",
+    "revision": "4b1872201558c6fb5e231f5be2b843ed16b2e105",
+    "private": false,
+    "remote_video_objects_size_and_lfs_sha256_verified": 1500,
+    "actual_hf_downloaded_and_sha256_verified_videos": 9,
+    "per_domain_actual_downloads": 3,
+    "metadata_files_downloaded_and_sha256_verified": 7,
+    "annotation_reference_pairs_validated": 1500,
+    "download_cli_sha256": "1c302f6d04e5eff790e8578550d5416c6fdd2c8078634840eb6af5f6d69e1154",
+    "authentication": "public"
+  },
+  "egodex_original_media": {
+    "status": "passed",
+    "original_archive_mp4_sha256_matches": 500,
+    "meaning": "EgoDex videos are unmodified archive members, renamed only."
   }
 }

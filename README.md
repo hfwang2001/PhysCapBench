@@ -14,6 +14,8 @@ PhysCapBench evaluates whether video captions describe physical events, objects,
 | Egocentric human manipulation | `ego` | 500 | Single-view video |
 | Human-operated handheld grippers | `umi` | 500 | Left-wrist / high / right-wrist composite |
 
+The 1,500 videos total **7.43 GB** and **9.16 hours**. Every sequence has an annotation and a scoring reference.
+
 Each UMI episode is one sample, not three. Preserve the three camera panels when generating captions. Third-person references are English, Ego references include bilingual fields, and UMI references retain their source-language fields. The text judge accepts these reference records.
 
 ## Install
@@ -21,6 +23,8 @@ Each UMI episode is one sample, not three. Preserve the three camera panels when
 Python 3.10+ is required. Scoring needs an OpenAI-compatible text API; a GPU is not required. Install FFmpeg separately for the optional caption-generation example (`brew install ffmpeg` on macOS, or `sudo apt-get install ffmpeg` on Ubuntu).
 
 ```bash
+git clone https://github.com/hfwang2001/PhysCapBench.git
+cd PhysCapBench
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.lock.txt
@@ -29,10 +33,10 @@ python -m unittest discover -s tests -v
 
 ## Download the data
 
-The dataset repository and immutable revision will be inserted after the Hugging Face upload has been verified. This checkout is a release candidate; the commands below intentionally use placeholders until publication.
+Download the [dataset on Hugging Face](https://huggingface.co/datasets/hfwang01/PhysCapBench) using the immutable revision below. The downloader also saves the source provenance and data terms.
 
 ```bash
-python bench.py download --repo HF_OWNER/PhysCapBench --revision DATASET_COMMIT --videos downloaded
+python bench.py download --repo hfwang01/PhysCapBench --revision 4b1872201558c6fb5e231f5be2b843ed16b2e105 --videos downloaded
 python bench.py validate
 ```
 
@@ -45,6 +49,8 @@ data/
   references.jsonl     # Current scoring reference for each sample
   supplements.jsonl    # Bilingual corrections/additions and evidence pointers
   applicability.jsonl  # Frozen per-dimension reference evidence
+  provenance.jsonl     # Source identifiers and per-video terms
+  LICENSE.md           # Data redistribution and attribution terms
 
 downloaded/videos/
   third/physcap9k_00012.mp4
@@ -116,16 +122,18 @@ Outputs include `scores.jsonl`, `summary.json`, per-sample `scores/` and `applic
 
 ## Quick end-to-end test
 
-Use the same domain and limit throughout:
+The following uses the same Ark model exercised in our live integration test for generation and judging. Set an API key with access to that model. Use the same domain and limit throughout:
 
 ```bash
-python bench.py download --repo HF_OWNER/PhysCapBench --revision DATASET_COMMIT --domain ego --limit 3 --videos smoke_videos
-python bench.py generate --domain ego --limit 3 --videos smoke_videos --model YOUR_VISION_MODEL --out smoke_predictions.jsonl
+export OPENAI_API_KEY='YOUR_ARK_API_KEY'
+export OPENAI_BASE_URL='https://ark.cn-beijing.volces.com/api/v3'
+python bench.py download --repo hfwang01/PhysCapBench --revision 4b1872201558c6fb5e231f5be2b843ed16b2e105 --domain ego --limit 3 --videos smoke_videos
+python bench.py generate --domain ego --limit 3 --videos smoke_videos --model doubao-seed-2-1-pro-260628 --out smoke_predictions.jsonl
 python bench.py validate --domain ego --limit 3 --predictions smoke_predictions.jsonl
 python bench.py score --domain ego --limit 3 --predictions smoke_predictions.jsonl --out results/smoke_ego
 ```
 
-Repeat for `third` and `umi`. A three-sample test is not a complete domain evaluation. See `VALIDATION.json`: a fresh Python 3.11 environment downloaded and hash-verified all 1,500 videos over HTTP; all annotation/reference pairs passed validation; three real videos per domain (nine total) completed caption generation, live scoring, and checkpoint-resume tests. Public Hugging Face download verification remains pending.
+Repeat for `third` and `umi`. A three-sample test is not a complete domain evaluation. See `VALIDATION.json`: a fresh Python 3.11 environment downloaded and hash-verified all 1,500 videos over HTTP; all annotation/reference pairs passed validation; three real videos per domain (nine total) completed caption generation, live scoring, and checkpoint-resume tests. All 1,500 published Hugging Face video objects match their expected sizes and SHA-256 values. Three videos per domain and all seven metadata files were additionally downloaded from revision `4b1872201558c6fb5e231f5be2b843ed16b2e105` without authentication and passed validation.
 
 ## Paper assets
 
@@ -133,4 +141,6 @@ The README overview is exported directly from `figures/physcapbench_overview.pdf
 
 ## Publication and license
 
-Public dataset/repository links and license terms are pending final publication configuration. No source-video redistribution license is inferred from a dataset name. Until those fields are resolved, this directory remains a release candidate.
+Evaluation code is provided under the [MIT license](LICENSE). Benchmark-authored annotations and metadata are CC BY 4.0; source videos and reproduced source material retain their original terms. See [data sources and terms](docs/data_sources.md). The complete video collection is subject to non-commercial research restrictions from some upstream sources.
+
+Data: [hfwang01/PhysCapBench](https://huggingface.co/datasets/hfwang01/PhysCapBench). Code: [hfwang2001/PhysCapBench](https://github.com/hfwang2001/PhysCapBench).
