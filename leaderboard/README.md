@@ -2,11 +2,11 @@
 
 The repository README displays the current project leaderboard snapshot. `results.json` stores exactly the same reported numbers and overall ranks.
 
-| Domain | Evaluated videos | Strategies | Source |
-|---|---:|---:|---|
-| Third-person | 466 | 11 | Project leaderboard table, checked against the archived third-person caption evaluation summary |
-| Egocentric | 12 | 7 | The tech report table “Physical caption evaluation on the egocentric dataset,” checked against its seven-dimension summary and 84 per-video records |
-| Handheld grippers | — | — | No leaderboard results reported |
+| Domain | Strategies | Source |
+|---|---:|---|
+| Third-person | 11 | Project leaderboard table, checked against the archived third-person caption evaluation summary |
+| Egocentric | 7 | The tech report table “Physical caption evaluation on the egocentric dataset,” checked against its seven-dimension summary and per-video records |
+| Handheld grippers | — | No leaderboard results reported |
 
 The report is **PhysCapBench: A Cross-Domain Benchmark for Physically Grounded Video Captioning**. All 144 displayed scores (seven dimensions and overall for 18 strategies) match the source summaries after rounding to two decimal places. The 56 egocentric values also match the report table directly.
 
