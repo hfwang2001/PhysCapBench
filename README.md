@@ -14,7 +14,7 @@
     <source media="(prefers-color-scheme: dark)" srcset="assets/institutions/baai-logo-white.png">
     <img src="assets/institutions/baai-logo-black.png" alt="Beijing Academy of Artificial Intelligence · 智源研究院" width="200" align="middle">
   </picture>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/institutions/pku-logo-white.svg">
     <img src="assets/institutions/pku-logo.svg" alt="Peking University · 北京大学" width="180" align="middle">
