@@ -17,7 +17,7 @@
   &nbsp;&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/institutions/pku-logo-dark.svg">
-    <img src="assets/institutions/pku-logo.png" alt="Peking University · 北京大学" width="180" align="middle">
+    <img src="assets/institutions/pku-logo.svg" alt="Peking University · 北京大学" width="180" align="middle">
   </picture>
   &nbsp;&nbsp;
   <picture>
