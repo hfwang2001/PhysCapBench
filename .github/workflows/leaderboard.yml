@@ -1,7 +1,7 @@
 name: leaderboard
 on:
   push:
-    branches: [codex/open-source-release]
+    branches: [main]
     paths: ['leaderboard/**', '.github/workflows/leaderboard.yml']
   workflow_dispatch:
 permissions:
